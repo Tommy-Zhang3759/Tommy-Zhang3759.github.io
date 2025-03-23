@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  周报#07 在草丛里 烂苹果旁 -    Tommy&#39;s Blog</title>
+  <meta name="description" content="">
+  <!-- 标签页图标 -->
+  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/css/white.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/vs.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+
+<div class="universal-outer">
+  
+<div class="menu-outer">
+    <div class="menu-inner">
+        <div class="menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                
+                <a href="/" class="nav-link">
+                    <li class="menu-li">
+                        首页
+                    </li>
+                </a>
+                
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
+<!--                <li class="menu-li" id="theme-change-btn">-->
+<!--                    默认-->
+<!--                </li>-->
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!--移动端-->
+<div id="mobile-main">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu-div">
+        
+        <a href="/" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>首页</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+</div>
+
+  <div class="body-outer">
+    <div class="body-inner">
+      <article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      
+      <div class="post-title">
+        周报#07 在草丛里 烂苹果旁
+      </div>
+      <div class="post-meta">
+        <img src="https://avatars.githubusercontent.com/u/67463795">
+        <div class="post-meta-name">Tommy</div>
+        <div class="post-meta-date">发布于 2025/03/23</div>
+      </div>
+    </div>
+    <div class="post-content-inner common-typographic">
+      <div class="post-placeholder"></div>
+      <div class="post-content-main">
+        <div class="post-content">
+          <h1 id="Briefing"><a href="#Briefing" class="headerlink" title="Briefing"></a>Briefing</h1><ul>
+<li><p><strong>多亏我亲爱的老师</strong> </p>
+<ol>
+<li><p><strong>加工</strong> 二次加工只需要打两个孔，等一会儿就好。之前都是闭门造车，现在有机会学习一下了。对齐工件可以用一种工具：整体是圆柱体，像钻头一样装在钻床钻轴上（所以我们暂且称其为钻头），头部的圆柱可以横向移动。用侧面接触工件边缘，接触到工件后可以观察到头部轴心偏移；随后慢慢远离工件，钻轴的中轴线越过工件边缘所在垂直平面后就会复原（可以自己想象一下）；如果让钻头在接触工件前就处于偏心状态，接触工件后可以观察到头部圆柱形成残影逐渐变小。攻丝是手动的，只是用钻头压着攻丝头，确保不会打歪。</p>
+</li>
+<li><p><strong>自己攻丝</strong> 3D打印的铝制转接键到货。现在的打印设备很难直接做出螺丝孔里的螺纹，需要后期手工处理。稍微算一下，觉得还是自己干比较划算，两件一共8个孔，一个孔10块。现有的钻床下钻和钻轴都是步进电机，可以自动攻丝。我也是一遍琢磨一遍干，不太熟练。四个孔花了半多个小时（而且还忘记用攻牙油了。</p>
+</li>
+<li><p><strong>本程序依靠bug运行</strong> 周一，设备和材料全部就位，开始实验。上来就遇到问题，手动对齐不太准。并不想买一个上文提到的“对齐钻头”，因为我们的滑台不能手动操作，只能用电脑控制。它很精准，但是没有那么灵活。只能写一个自动对刀的程序了。基本思路是利用现有的压力传感器，检测刀头有没有碰到木块上。多亏这个世界不是理想化的，纵向安装的压力传感器也会被横向的力影响，才让这种方法成为可能。某种程度上来说，该程序依靠bug运行🤫</p>
+</li>
+<li><p><strong>终于</strong> 插上电源，连接串口，打开热成像，键盘上敲着设计的命令，落地窗外的设备运行。按下绿色按钮，下钻，步进电机带有电子感的“嗡嗡”声被钻头与木材间的切磋打断；接着是刺耳的啸叫，应该是木屑和金属共振发出的。换上木榫，再开机；一缕白烟飘起，散开，伴随木头燃烧的味道，热成像上火花迸溅。结束，看伪彩图，黄色与白色的高温逐渐浮现，翻涌着涨破木材（好的描写结束……咳咳）。总之实验是做起来了，但是还需要有一套数据处理的流程。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>学学Rust</strong> Rust已经要成敏感词了😶‍🌫️ 去年开始接触现代编程语言的时候就知道了Rust，有人说它是编程语言中的原神，今年年初Linux内核的Rust之争也把这个语言推到了话题焦点。去年选择了Golang而不是Rust一比分是出于实际工程需求考虑，当时更需要的就是Go的高并发性能（不愧是Google开发的语言）；另一部份是对争议的排斥，感觉自己稍不注意就容易被流量和舆论牵着走，带有情绪。偶然看到了Rust编译器的报错，非常完善，甚至包含了教你如何把程序写得更好的提示。虽然是C&#x2F;C++出身，但是一直以来都依赖于C++的Garbage collection(GC)，没怎么手动管理过内存。而且我是JavaScript入门，感觉这么多年思维都有点被Object-oriented programming(OOP)固化了，在用Go写后端的时候就发现自己纠结于如何进行一些不必要的杂乱封装，浪费了不少时间。所以觉得是时候点不一样的东西了，拓展一下思维。比如现在意识到认识到函数式编程（Functional programming）没死，前端，中间层，后段，各需要不同的编程范式。<br>Ich lebst…</p>
+</li>
+<li><p><strong>在草丛里，烂苹果旁</strong> 去明孝陵放风，试试新的老镜头。半个月前就买了转接环，这周才找到机会带着相机出去。东郊太远，梅花山，还有那么一点点梅花（其实没几棵）。看花梅未遂，在山上乱逛，看到山坡上大片的二月兰，还有蝴蝶蜜蜂。于是乎，某人在草丛里，蹲了快三个小时，拿着一颗纯机械长焦镜头拍蝴蝶和蜜蜂（没错，一颗烂苹果陪了我三个小时拍的，10cm）。准备跑路，遇四人，见我手上拿个相机，镜头老长，很砖业的样子，问我能不能帮忙拍两张。心里非常想跑，但是现在拒绝简直比拍得不好还尴尬（毕竟能拖一会再尴尬），只好答应。最后……只能说……靠着稍微还有的那么一点点理论知识—……用二倍长焦，拍了一点。拍完照聊天就很轻松了，奶奶说她孙子是北京上学出国的，跟我同一届。 </p>
+</li>
+<li><p><strong>华为 FreeClip</strong> 可以说，是我最喜欢的华为产品。很轻，戴上没有很强的异物感，声音意外的好，远超我对预期。漏音现象可以接受，在不是太吵的地方用应该没什么问题，就是不清楚马路上效果如何。而且听说麦克风降噪效果很好，好评！也许会买一个。也许，还真的算有性价比？</p>
+</li>
+</ul>
+<h1 id="琐碎"><a href="#琐碎" class="headerlink" title="琐碎"></a>琐碎</h1><ul>
+<li><p><strong>What？但是真好笑</strong> 改作业，看似不享受，实则一点也不轻松。每次改完都觉得魂都没了，两三个小时下来，特别累。我回家，顺便把垃圾带走。老师骑电动车把我送到地铁口，我坐在后面，手上领着他给我的一些馓子。不小心骑过了，那就先扔垃圾把。横停在小区垃圾房门口，抬手，起摆，发力，拉出一道优美的弧线，塑料袋飞翔在空中，清脆地滑过头顶，完美的落在垃圾桶里，一气呵成，优雅。“不是，你刚刚扔的是啥？”“啊？？？？哦，是馓子！咋办。”（由于弧线非常优雅，没有任何东西掉出来，最后捡回来了，今天吃了挺好吃的🤣</p>
+</li>
+<li><p><strong>多邻国上的网友</strong> 上周和其他人拼车的多邻国Super会员家庭版。买家跟我介绍他们四个是好朋友，以后还可以一起拼。拉倒家庭群组里会自动互相follow，能看到对方取得的一些成就。第一次碰到他们中的一个人获得成就，选择无视，并没有像看到生活中认识的人得到成就后那样，发一个celebrate。这不麻烦，就是点一下的事情，只是素不相识，觉得可能有些冒昧。但是呢，几天过后，对方给我点了一个。嗯……我又看到的时候，celebrate。</p>
+</li>
+<li><p><strong>地铁上的保洁</strong> 在朋友圈下留言：老板，您天天发财，可不要忘了我们保洁啊。（我，只是，在学习德语，隔壁看我手机里的德语，我随意瞄了一眼👀</p>
+</li>
+<li><p><strong>还得是大爷</strong> 梅花山上的大爷，赤脚，脖子上挂着一长串青色的小珠串，双手各拎一个灌满水的约2L罐子，背着一个不小的包，喊着中气十足的口号（没听懂），从远处走过来，从不远处的草坡走了过去。“假的真不了，真的假不了。我练功，已经练了二十年了。”</p>
+</li>
+</ul>
+<h1 id="折腾设备"><a href="#折腾设备" class="headerlink" title="折腾设备"></a>折腾设备</h1><ul>
+<li><p><strong>GNOME Shell插件们</strong> 用了好久的纯原生GNOME，以前尝试过装插件，可是当时没什么信心，也没什么耐心研究各种文档。这周花了一个晚上折腾了一下，自由度超高，实在没有，自己搓。现在的桌面环境加了高斯模糊效果，变得好看了很多，更通透了。</p>
+</li>
+<li><p><strong>Ptyxis</strong> 这是Fedora 41的新terminal。图标比原来用的GNOME Terminal好看不少，去除了白色描边，代表命令行的“&gt;_”字符变成了一种青色。背景的黑色更深，还有一点点拟物风格的高光，整体看起来更干净简洁。我最喜欢的功能是在提权之后顶栏会变成红色，很醒目，运行命令的时候会更谨慎。</p>
+</li>
+<li><p><strong>缓存盘</strong> 第二块傲腾M10，两个盘组成RAID1，当作NAS的读写缓存。登陆DSM的速度明显提升，理论上也会到来文件写入性能的提升。16GB是有点小了，但是目前感觉很不错。</p>
+</li>
+</ul>
+<h1 id="看-听了什么"><a href="#看-听了什么" class="headerlink" title="看&#x2F;听了什么"></a>看&#x2F;听了什么</h1><ul>
+<li><p><strong>音乐会</strong> 这次是室内乐，主要是巴赫的作品。曲目如下：</p>
+<ol>
+<li>G小调第一小提琴奏鸣曲, BWV1001</li>
+<li>B小调第一无伴奏小提琴组曲，BWV1002</li>
+<li>A小调第一小提琴协奏曲，BWV1041</li>
+<li>E大调第二小提琴协奏曲，BWV1042<br>  上下半场各两部作品。上半场的都是小提琴独奏，巴洛克风格的作品，节奏很快，节奏华丽，或称为复杂。这次提前做的功课不够多，两首小提琴独奏的作品都没太听下去，太长了，太复杂了，听完了根本没有概念，太长记不住了……一个十几分钟，一个半个小时……台上的小提琴家辛苦了……下半场就轻松多了，最喜欢BWV1041第二乐章，沉稳，故事一步步展开。返场两次，维瓦尔第的《四季》中的《夏》（L’Estate, RV 315）和《冬》（L’Inverno, RV 297）。</li>
+</ol>
+</li>
+<li><p><strong>半泽直树</strong> 还是几乎每天晚上都看，第二季完结。每天晚上看一两集挺好的，下面看什么呢？不然Severance S2？</p>
+</li>
+</ul>
+<h1 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h1><p>这周的时间好像变慢了。</p>
+
+        </div>
+      </div>
+      <div class="post-placeholder post-toc-container">
+        <!-- toc -->
+        
+          <!-- tocbot -->
+<nav class="post-toc toc"></nav>
+
+        
+      </div>
+   </div>
+
+    <!-- 评论 -->
+    
+  </div>
+</article>
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.post-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    });
+
+</script>
+<!-- tocbot end -->
+
+    </div>
+  </div>
+
+  <!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+  
+    <div class="footer-outer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
+
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-ul">
+                
+                <li class="footer-li">
+                    <a href="https://github.com/Tommy-Zhang3759" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="tommyzhang4707@outlook.com" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+  
+</div>
+
+
+
+
+<script src="/js/white.js"></script>
+
+<script>
+    hljs.highlightAll();
+</script>
+
+
+</body>
+</html>
