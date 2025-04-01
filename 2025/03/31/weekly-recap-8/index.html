@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  weekly-recap-8 -    Tommy&#39;s Blog</title>
+  <meta name="description" content="">
+  <!-- 标签页图标 -->
+  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/css/white.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/vs.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+
+<div class="universal-outer">
+  
+<div class="menu-outer">
+    <div class="menu-inner">
+        <div class="menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                
+                <a href="/" class="nav-link">
+                    <li class="menu-li">
+                        首页
+                    </li>
+                </a>
+                
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
+<!--                <li class="menu-li" id="theme-change-btn">-->
+<!--                    默认-->
+<!--                </li>-->
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!--移动端-->
+<div id="mobile-main">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu-div">
+        
+        <a href="/" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>首页</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+</div>
+
+  <div class="body-outer">
+    <div class="body-inner">
+      <article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      
+      <div class="post-title">
+        weekly-recap-8
+      </div>
+      <div class="post-meta">
+        <img src="https://avatars.githubusercontent.com/u/67463795">
+        <div class="post-meta-name">Tommy</div>
+        <div class="post-meta-date">发布于 2025/03/31</div>
+      </div>
+    </div>
+    <div class="post-content-inner common-typographic">
+      <div class="post-placeholder"></div>
+      <div class="post-content-main">
+        <div class="post-content">
+          <p><em>记录3月24日～30日</em><br>忙碌，非常忙，这周好累。天气也不愿意闲下来，周一还三十度，周末就穿上羽绒服了。</p>
+<h1 id="Briefing"><a href="#Briefing" class="headerlink" title="Briefing"></a>Briefing</h1><ul>
+<li><p><strong>多亏我亲爱的老师</strong></p>
+<ul>
+<li><p><strong>改进传感器</strong> 之前的压力测量装置用的是刚性连接。采用的压力传感器是压阻材料，这意味着扭矩也会极大的影响压力的测量值（也就是之前利用的bug）。现在改成了一个板子不能直接放在传感器上，不会又横向应力的传递了。</p>
+</li>
+<li><p><strong>鸡鸣寺</strong> 他说要拜拜学业。同样是坐地铁，甚至距离远的多，但是只转车一次，轻松很多，坐着就行了。紫色的四号线，鸡鸣寺站，上到地面看到的就是阳光和墨绿色树叶，挺配的。很多年前经常路过，就会注意到出站口的紫色标志。阳光很好，鸡鸣寺路上依然是熟悉的蓝色，古生物博物馆总是挡着路上的阳光。这可能就是为什么我不太喜欢看这里的樱花。樱花好看，但是周围看起来暗，花都印上一层蓝色，而我更喜欢暖色的阳光。有刻板印象了吧。熙熙攘攘的人流里穿行，鸡鸣寺门前，非常经典的取景位置，几个游客端着手机和相机。什么时候我也带相机来拍一张。上台阶，没了建筑物的遮挡，我如愿以偿，迎着阳光，向上走，这时候就只记得热了。隐约记得很久以前来过，已经不太有印象了。</p>
+</li>
+<li><p><strong>与文字识别大战三百回合</strong> 现有的红外测温是视频输出，伪彩图的最高温度和最低温度也是显示在图像上，只能用文字识别的方式读取。开始用的库是EasyOCR，确实很easy，调用很方便。但是识别效果非常糟糕，非常清晰的图片识别出来的内容几乎完全不可用，～29.2识别成7207这种。换成Google的Tesseract，一样差得离谱。我就纳闷了：民间开源项目效果不好，可以理解；Google，行业开源标杆（虽然他们比较躺），怎么可能做得这么差的呢？微信有文字识别功能，试一下，不行。欸对了，直接从图片上选中复制这个功能是Apple先出的，试试？诶！非常完美！（这个瞬间厨子头上的光环在我心中更亮了一些）那他们是怎么实现的？查。<a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2019/234/">WWDC19</a>讲到两个技术路线：</p>
+<ol>
+<li><p>传统方法（Character detection）：一个小的神经网络负责框出单个字符，另一个小网络负责识别单个字符。</p>
+</li>
+<li><p>NN based text detection：直接一整张图片扔进神经网络，直接整段识别。</p>
+</li>
+</ol>
+<p>  前者更快，网络大小比NN based method小的多，资源占用小。后者网络大，并且生成的是连续的句子，可以根据前后文更好的区分易混淆字符和非打印体。最后WWDC19上苹果说他们采用了分而治之的方法，根据不同场景需求选择不同的技术路线。事实上，因为NN based method在大段文字，特别是手写体识别的场景下效果太好，现如今很多的库都提供了基于神经网络运行的选项，并且设为默认。很有可能是纯数字的情景过于简单，完全没有语言逻辑，反而干扰了识别。LLM告诉我Tesseract有使用传统算法的选项（甚至默认下载的模型文件不支持传统算法）。折腾很久运行起传统算法之后，完美的识别。</p>
+</li>
+<li><p><strong>疯狂的Python</strong> 数据处理用的Python，因为不想因为程序问题拖慢了进度。识别图像上的温度只是第一步，还需要根据识别出的温度范围反推伪彩图的colour map。很不幸，视频传出来就是压缩过的，很多像素已经偏色了，颜色根本没有紧密的分布在colour map范围的周围，这就意味着从颜色转换回温度没法简单一一对应的替换了（7&#x3D;a，2&#x3D;c这种），要在RGB空间里找到最相近的colour map上的点再替换。这个计算量已经远远超过让Python快速算出结果的范围了（试了一下，一帧四五分钟的样子）。Python 3.13加入了JIT（Just In Time， 即时编译功能），可以让做纯数学计算和循环的函数提速到C&#x2F;C++的水平（毕竟编译成二进制了）。图省事用的Numba，第三方JIT库，效果很好，一秒不到一张图，2分钟25帧480*640的视频6分钟算完。后面还有处理，需要不少内存。写Python考虑内存好痛苦，有时传进函数的是指针，有时是copy，还不标注，多了完全分不清😑而且多线程性能又不好（这个场景下单核变成十核只有2-3倍提升），已经后悔用Python了，不如直接C++调库。</p>
+</li>
+<li><p><strong>准备签证材料</strong> 两个人的材料，也就花了我将近两天时间吧。</p>
+</li>
+<li><p><strong>线性代数</strong> 需要根据整个过程中最高温度出现的位置拟合出一条直线。矩阵微积分基础不好，矩阵解法的过程没看懂，干脆换成梯度下降法。结果是，学了几个小时，有一部求导没太看懂。目前情况是：周围的几个老师都没学过矩阵微积分，我连个能问的人都没有😒纯纯自学。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>机票们</strong> 额，对，“们”。一天定了五段行程的机票。日本往返，和去澳洲的（1.3k真便宜，看看Scoot的飞机是不是更多补丁了）。</p>
+</li>
+</ul>
+<p>没错，这周的时间全花实验上了，其他的，没了🤦</p>
+<h1 id="琐碎"><a href="#琐碎" class="headerlink" title="琐碎"></a>琐碎</h1><ul>
+<li><p><strong>热，暖暖的风</strong> 春天特有的风，很暖和的风吹在不厚的衣服上，很强的包裹感，吹在身后感觉能把人托起来。</p>
+</li>
+<li><p><strong>摸鱼听音乐，好嗨</strong> 写代码，连写两天，一早就起来，跟Python奋斗一整天，被各种奇怪的语法折磨了一整天，超级崩溃，但是到晚上九点还在写。实在不想写了，准备摸鱼，“一边听歌一边写代码”（事实上对我来讲不可能的，有音乐专心不了一点）。结果就是，听了两首就听嗨了，一首pop，一首K-pop，一首霉的歌，好的写什么代码，嗨起来了😆（事实上我都不太理解当时为什么突然那么嗨，反正结果是最后嗨了二十分钟又去写了，直接一点多</p>
+</li>
+</ul>
+<h1 id="折腾设备"><a href="#折腾设备" class="headerlink" title="折腾设备"></a>折腾设备</h1><ul>
+<li><p><strong>服务器挂了</strong> 拆硬盘背板清理的时候被我转椅上的静电电挂的，测了一下估计主板电源部分什么东西废了，直接换主板吧</p>
+</li>
+<li><p><strong>Conda挂了</strong> 第三次把Conda搞挂，当时在升级base环境里的Python版本（我为什么不用install而非要用update</p>
+</li>
+</ul>
+<h1 id="看-听了什么"><a href="#看-听了什么" class="headerlink" title="看&#x2F;听了什么"></a>看&#x2F;听了什么</h1><ul>
+<li><p><strong>Violin Concerto No. 1 in A Minor, BWV 1041</strong> 听了两周了，越听越喜欢这种风格。最近更喜欢古典，感觉纯音乐没有歌词的束缚，表达的更细腻，丰富。越过了语言，直达情感。啊对当然，我听不懂的意大利语和德语歌剧也算纯音乐。</p>
+</li>
+<li><p><strong>THR TORTURED POETS DEPARTMENT： THE ANTHOLOGY</strong> 听嗨了的时候随机到，好就没听Taylor，隔了这么就再就只想说还是老霉的歌好听。</p>
+</li>
+</ul>
+<h1 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h1><ol>
+<li><p>就 很 稳</p>
+</li>
+<li><p>听到一个说法，就是很多看起来很没必要的话，其实很有意义</p>
+</li>
+</ol>
+<p><em>写了约2小时，但是熬大夜写</em></p>
+
+        </div>
+      </div>
+      <div class="post-placeholder post-toc-container">
+        <!-- toc -->
+        
+          <!-- tocbot -->
+<nav class="post-toc toc"></nav>
+
+        
+      </div>
+   </div>
+
+    <!-- 评论 -->
+    
+  </div>
+</article>
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.post-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    });
+
+</script>
+<!-- tocbot end -->
+
+    </div>
+  </div>
+
+  <!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+  
+    <div class="footer-outer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
+
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-ul">
+                
+                <li class="footer-li">
+                    <a href="https://github.com/Tommy-Zhang3759" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="tommyzhang4707@outlook.com" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+  
+</div>
+
+
+
+
+<script src="/js/white.js"></script>
+
+<script>
+    hljs.highlightAll();
+</script>
+
+
+</body>
+</html>
