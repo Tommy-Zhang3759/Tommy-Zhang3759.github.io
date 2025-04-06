@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  周报#09 江边能有什么？ -    Tommy&#39;s Blog</title>
+  <meta name="description" content="">
+  <!-- 标签页图标 -->
+  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/css/white.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/vs.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+
+<div class="universal-outer">
+  
+<div class="menu-outer">
+    <div class="menu-inner">
+        <div class="menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                
+                <a href="/" class="nav-link">
+                    <li class="menu-li">
+                        首页
+                    </li>
+                </a>
+                
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
+<!--                <li class="menu-li" id="theme-change-btn">-->
+<!--                    默认-->
+<!--                </li>-->
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!--移动端-->
+<div id="mobile-main">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu-div">
+        
+        <a href="/" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>首页</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+</div>
+
+  <div class="body-outer">
+    <div class="body-inner">
+      <article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      
+      <div class="post-title">
+        周报#09 江边能有什么？
+      </div>
+      <div class="post-meta">
+        <img src="https://avatars.githubusercontent.com/u/67463795">
+        <div class="post-meta-name">Tommy</div>
+        <div class="post-meta-date">发布于 2025/04/06</div>
+      </div>
+    </div>
+    <div class="post-content-inner common-typographic">
+      <div class="post-placeholder"></div>
+      <div class="post-content-main">
+        <div class="post-content">
+          <p><em>记录3月31日～4月6日</em><br>放假前一天才知道，原来有假期！而且这周成果明显啊～</p>
+<h1 id="Briefing"><a href="#Briefing" class="headerlink" title="Briefing"></a>Briefing</h1><ul>
+<li><p><strong>多亏我亲爱的老师</strong></p>
+<ol>
+<li><p><strong>加工铝件</strong> 上周重新设计了传感器支架，这周拿到了新定的零件。很快尺寸有点问题，设计的卡槽比模型小了0.1mm，应该是达到工厂机床的分辨率上限直接省略小数点了，下次注意和厂家沟通好。继续找上次的那个师傅处理。这次学到了铝不容易用砂轮加工，因为材料太软，不锈钢反而容易操作。最后，一部分打磨，一部分铣，问题解决。处理完大小问题还需要打四个孔，把新的件固定在原来的基板上。我想要算一下位置，方便对齐对应的孔，师傅表示先钻了再说（就真的这么搞定了😦）。一边做一边闲扯，师傅说他03年来南京，06年买的现在这几个机床，是真的数十年如一日。聊着聊着两个小时就过去了，可能是聊的开心的原因吧，师傅又给了友情价😃</p>
+</li>
+<li><p><strong>新数值模拟模型</strong> 焊接温度场的模拟用abaqus，一个工程用仿真软件。提供的Python API文档几乎找不到，调试功能完全不可用。如果延续已有的仿真思路，需要手动微分（他真的是微分仙人）。新提出一个改进方案，应该能在可接受的误差内简化仿真过程。</p>
+</li>
+<li><p><strong>非稳态热传导方程离散化</strong> abaqus方案以外，尝试自己用Python写有限元。先学习了一下稳态热传导，掌握传热学基础概念和思想。速率&#x3D;推动力&#x2F;阻力，听说这个思想贯穿很多“流动”的问题。微分方程离散化求数值解有点类似于求积分的黎曼和，规定小值作为微元，再用插值法离散化矩阵，然后一步一步迭代，也就是积分。现在用的是最简单的中值差值离散化二维热传导的微分方程，都是矩阵操作。看起来是离散的矩阵借用极限的思想表示连续的热量场，神奇。</p>
+</li>
+<li><p><strong>实验 Ready</strong> 实验出有效数据了🎉🎉 压力数据的峰值明显低于以往的同条件实验，看来改进方案是对的。跑通了实验流程，流程都标准化了！</p>
+</li>
+<li><p><strong>实验记录表</strong> 原来实验记录如此重要。做了4组实验，只有1组有效，剩下的每一组都有参数不正确🫣在我们这种自动化程度不是特别高的实验里，十几步操作，一不小心就漏一个，或者设错一个加工参数。只有列下表格，打勾确认才能保证效率，不然十分钟一组的实验做一下午也没有几组有效的。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>芜湖</strong> 起飞？？这个城市，就和一个老师告诉我的一样，不大。不是去年去过的东北小镇那样的小，只是相对于周围南京合肥之类的城市。海关旧址前，看到江面上是不是冒出几个小小的，尖尖的东西。猜了好一会，跑遍的本地人说那都是鳖！长江水已经很清了，仔细分辨能看见它们在离岸边不远处的地方游，还不少，可能小几十只，不一会看到有人下去捉。骑自行车在城里乱转，没多久，新住宅楼就取代了市中心的老建筑。到安师大，掉头，打道回府。最后两公里坐地铁，以前没见过单轨，去看看。列车很安静，车尾也没有封闭驾驶室，通透。结构设计有点像珠海城铁，车厢两端有大块不能站人的地方，很有空间设计感，但是不太理解作用是什么。</p>
+</li>
+<li><p><strong>山樱花</strong> 春天竟然有这么多花。山樱花一团一团，挂满枝头。</p>
+</li>
+<li><p><strong>整理照片</strong> 出现过两次相机时间不正确的情况，那两次的照片一直没有加进时间线排序的相册。以前一直没耐心看库函数文档，周末push了一下自己，写了几行改拍摄时间到程序。拖了一年多的事，半小时搞定了。</p>
+</li>
+</ul>
+<h1 id="琐碎"><a href="#琐碎" class="headerlink" title="琐碎"></a>琐碎</h1><ul>
+<li><strong>江边能有什么？</strong> 不少人在那摆摊。有传统的贴膜，打气球，套环，有唱歌，有一些流行的小玩意，甚至还有烟花和孔明灯。一群人，坐在折叠椅上，静静的听他们唱着歌，不远处的三个人趴在栏杆上，仙女棒噼里啪啦的响。孔明灯，默不作声的飞，带着大家的愿望。天也不凉了。</li>
+</ul>
+<h1 id="看-听-玩了什么"><a href="#看-听-玩了什么" class="headerlink" title="看&#x2F;听&#x2F;玩了什么"></a>看&#x2F;听&#x2F;玩了什么</h1><p><strong>超级马力欧奥德赛</strong> 任天堂做游戏做了好多惊喜在里面，动画效果也很好。第一次玩带体感操作的游戏。</p>
+<h1 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h1><p>我现在这是主动996啊，没必要吧？</p>
+<p><em>写了约2小时，并且不熬大夜</em></p>
+
+        </div>
+      </div>
+      <div class="post-placeholder post-toc-container">
+        <!-- toc -->
+        
+          <!-- tocbot -->
+<nav class="post-toc toc"></nav>
+
+        
+      </div>
+   </div>
+
+    <!-- 评论 -->
+    
+  </div>
+</article>
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.post-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    });
+
+</script>
+<!-- tocbot end -->
+
+    </div>
+  </div>
+
+  <!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+  
+    <div class="footer-outer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
+
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-ul">
+                
+                <li class="footer-li">
+                    <a href="https://github.com/Tommy-Zhang3759" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="tommyzhang4707@outlook.com" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+  
+</div>
+
+
+
+
+<script src="/js/white.js"></script>
+
+<script>
+    hljs.highlightAll();
+</script>
+
+
+</body>
+</html>
