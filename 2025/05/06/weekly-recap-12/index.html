@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>  weekly-recap-12 -    Tommy&#39;s Blog</title>
+  <title>  周报#12 偶尔在玩 经常坐车 -    Tommy&#39;s Blog</title>
   <meta name="description" content="">
   <!-- 标签页图标 -->
   
@@ -95,7 +95,7 @@
     <div class="post-intro">
       
       <div class="post-title">
-        weekly-recap-12
+        周报#12 偶尔在玩 经常坐车
       </div>
       <div class="post-meta">
         <img src="https://avatars.githubusercontent.com/u/67463795">
@@ -107,11 +107,26 @@
       <div class="post-placeholder"></div>
       <div class="post-content-main">
         <div class="post-content">
-          
+          <p><em>记录4月28日～5月8日</em><br>假期 舟车劳顿</p>
+<h1 id="What-Was-Happening"><a href="#What-Was-Happening" class="headerlink" title="What Was Happening"></a>What Was Happening</h1><ul>
+<li><p><strong>Promox万兆互联</strong> 10GB的虚拟网卡非常惊人。模型计算上出现了内存容量瓶颈，导致生成了大小非常恐怖的硬盘缓存文件。按照最初的设计，所有虚拟机的磁盘容量都是非常小的，只用来装操作系统和Abaqus软件本身，其他所有数据全都放在处在同一物理服务器中的NAS里，通过Linux网桥互联，走smb协议，mount在C盘根目录下（这里的mount也是一个天坑）。面对直接记录从CPU记录，缓存数据的工作时，1Gbps的速率就捉襟见肘了，严重拖慢计算进度。通过安装openvswitch-switch，创建OVS Bridge，使用VirtIO类型的虚拟网卡连接虚拟机，就可以实现万兆通信。第一次看到速度飙到2Gbps，跑满硬盘的时候，还是很激动的（没见识没有见过万兆🤦‍♂️）。通过在NAS的虚拟硬盘上添加disk catch, Write back(unsafe) 可以让写入达到一种非常疯狂的速度，据说上限取决于内存带宽。几天后还是把内存加到了128GB。</p>
+</li>
+<li><p><strong>去了一趟浙江</strong> 额，说实话，一直在坐车，和看人头(^_^) 坐车沿途看看也不错，宁波到舟山的路上看到大片的炼油厂，震撼。惊奇的是经过厂区竟然没有异味，之前在南京北面的金陵石化那边问到有明显的臭味。路上经过绍兴，鲁迅故居人太多了，劝退，但是旁边的一个古镇街区挺不错，不是那种现代建造的“古镇”，不少人在买鲁迅IP的文创，很多很多帆布袋。鲁迅：我没说过（当然这句话也在文创行列）。在溪口也停留了一下，上山玩了一天，景色不错，但是路途遥远，走山路就走了大概4公里，而且上山进景区也要坐好久的车（还要转），有点受不住舟车劳顿。</p>
+</li>
+<li><p><strong>承包监控部署调试业务</strong> 承包大伯大妈的监控安装业务。从布线到监控设备、技术栈选择，到网络工程全部一人承包🧐 选择TP-LINK的监控，便宜又实惠，并且兼容共有协议，可以用现有的群晖当录机。全部支持POE，省去折腾强电麻烦和操作不规范的危险。网线，罗格朗很好但是太贵了，最后权衡使用H3C六类100m。所有设备都连接只需要一个小小的百兆POE交换机，TP-LINK有100块一个的6口设备，其中4个POE。</p>
+</li>
+</ul>
+<h1 id="看-听-玩了什么"><a href="#看-听-玩了什么" class="headerlink" title="看&#x2F;听&#x2F;玩了什么"></a>看&#x2F;听&#x2F;玩了什么</h1><h2 id="Hamilton"><a href="#Hamilton" class="headerlink" title="Hamilton"></a><strong>Hamilton</strong></h2><p>2015年推出的音乐剧Hamilton的现场录制版出的原声带，推荐！意外的看到其中<em>Satisfy</em>部分的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1cDdkYNEwg">翻唱</a>，其中的情绪和强大的力量很是震撼，会找到视频完整看一遍。包含的表达还不能做到全部明白，很多口语化表达和专业表达还是看不懂，更别说听懂了。现在很有兴趣去详细学习一下。整部音乐剧讲述的是美国国父之一汉密尔顿（Alexander Hamilton）的一生，主要聚焦于其美国独立战争期间与战后政治生涯。简单听了四分之一觉得编曲非常优秀，而且融合了很多现代元素，并且不突兀，期待视频版的效果。</p>
+<h1 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h1><h2 id="一扇新的窗"><a href="#一扇新的窗" class="headerlink" title="一扇新的窗"></a>一扇新的窗</h2><p>最近一直烦恼于一种被“困住”的感觉。日复一日，早上不用早起，但是是以一小时的通勤开始。实验有进展，但是不多。马上的老化性能测试要模拟不少苛刻环境，一直纠结于权衡花销、设备占地大小与自动化程度。即使已经得到近乎“钱不是问题”的支持，可以直接买专业的蛇别，比如烘箱，蒸箱，但是一轮模拟就是48小时，中间要换四次设备，看着就让人头疼。加工模板也不是特别顺利，频繁的手工操作很容易出错，导致一块板子报废。但是一块板子就需要将近二十几分钟才能加工完，脑中总是想打退堂鼓。结束工作时间，一个小时的通勤，再回到家，心里想的还是有关实验。接触音乐剧，感到自己进入了另一个世界。</p>
+
         </div>
       </div>
       <div class="post-placeholder post-toc-container">
         <!-- toc -->
+        
+          <!-- tocbot -->
+<nav class="post-toc toc"></nav>
+
         
       </div>
    </div>
