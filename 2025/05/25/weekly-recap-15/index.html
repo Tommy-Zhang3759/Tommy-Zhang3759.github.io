@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  weekly-recap-15 -    Tommy&#39;s Blog</title>
+  <meta name="description" content="">
+  <!-- 标签页图标 -->
+  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/css/white.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/vs.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+
+<div class="universal-outer">
+  
+<div class="menu-outer">
+    <div class="menu-inner">
+        <div class="menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                
+                <a href="/" class="nav-link">
+                    <li class="menu-li">
+                        首页
+                    </li>
+                </a>
+                
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
+<!--                <li class="menu-li" id="theme-change-btn">-->
+<!--                    默认-->
+<!--                </li>-->
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!--移动端-->
+<div id="mobile-main">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name">
+            <a href="/">
+                Tommy&#39;s Blog
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu-div">
+        
+        <a href="/" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>首页</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+</div>
+
+  <div class="body-outer">
+    <div class="body-inner">
+      <article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      
+      <div class="post-title">
+        weekly-recap-15
+      </div>
+      <div class="post-meta">
+        <img src="https://avatars.githubusercontent.com/u/67463795">
+        <div class="post-meta-name">Tommy</div>
+        <div class="post-meta-date">发布于 2025/05/25</div>
+      </div>
+    </div>
+    <div class="post-content-inner common-typographic">
+      <div class="post-placeholder"></div>
+      <div class="post-content-main">
+        <div class="post-content">
+          <h1 id="What-Was-Happening"><a href="#What-Was-Happening" class="headerlink" title="What Was Happening"></a>What Was Happening</h1><p><strong>绿色画面</strong> 哈哈其实就是指彩色相机传感器拜耳直读画面发绿的现象。传感器的拜耳阵列里红、绿、蓝色像素数量之比是1:2:1，自然对绿色更加敏感。给显微镜配的相机是一台1”的工业相机，Sony传感器，USB连接，配合厂商提供的C++ SDK可以读取并设置参数。输出视频帧只有BayerRG 8&#x2F;12bit的选项，也就是RAW直出，需要自己进行一系列色彩处理才能得到正常的颜色，其中包括：白平衡矫正（就可以去除奇怪的绿色），色域空间转换，Gamma调整等一系列过程。很巧的是前段时间我刚好学习了这部分知识，稍微复习一下，手到擒来。学过的那点线性代数这次继续立大功。</p>
+<p><strong>新尺寸和爆炸的加工效率</strong> 经历了上周的崩溃瞬间，我们决定提前开始以下钻深度为变量的实验加工，以更好的为木板加工提供合适的参考数据。这一组实验的下钻深度与木板的厚度完全一致，并且不需要进行温度场信息的捕捉，试件木块的高度可以调小不少。试件小了，固定更加稳固，单价低，数量多，方便大胆操作了。再加上熟练工的buff，两个下午干完了以前一周的工作量，效率爆炸，嘿嘿。</p>
+<p><strong>电子千分表</strong> 推翻了使用贴片式应变片测量应变的计划，改用接触式光栅电子千分表。比以前用的机械式高级，可以连续记录位移-应变曲线。设备精致，文档看起来还比较健全，现在还学会了传感器和工控领域常用的Modbus协议，开发起来应该会轻松不少，标准化的东西嘛<del>有不少开源库可以白嫖</del>。这次吸取教训，涉及大量binary操作的程序用回C++，不跟Python较劲了😇 </p>
+<p><strong>质量不好？假货？</strong> 为木材老化试验制作一个实心304不锈钢材质的架子，防止木板浮出水面。还是那位机加工师傅，中午把材料送过去，让我下午去拿。再次回到一看就非常有经验的店里，师傅一脸无语的告诉我，材料加工不动，有可能是假货，用201冒充的304.店家坚称材料没有问题，我可以送检。师傅看对方给出如此答复，表示可能是材料的质量不好，一些小厂工艺不好，可能是材料不纯。学到了，原来同样是304，也会有不小的加工性能差异，这次的材料可是连专门的不锈钢钻头都打不动。</p>
+<p><strong>Linux挂了！！！</strong> 当我久违的打开笔记本上的Windows，准备画一块简简单单的电路板的时候，Windows选择了用一堆奇奇怪怪的bug短时间的反复折磨我，甚至让我以为文件系统坏了。这一通迷之操作后，我的决定是Windows 11已经没有权利在我的电脑里占用一块单独的硬盘了<del>（完完全全破防了）</del>，我要把他流放到虚拟机里，老老实实在虚拟磁盘里待着。虽然知道如果我用VMWare的事情传出去一个以Portugiesisch为母语的人会轻轻的碎掉，但是它的图形界面是真的好用。其实VMware已经装在电脑上好久了，只是按照Fedora的严格安全策略，VMware运行所需的几个内核模块需要签名才能正常运行，我之前一直没心情去研究Linux的签名机制。稍微花了一点时间，签名的过程很轻松，虚拟机正常运行起来了，但是虚拟机没法建立网络连接。众所周知，重启解决50%的问题，遂重启，然后就Boom啦～ 系统没法正常加载vmnet模块，整个kernel都卡在这里，进入了无限的重试。出问题的时候已经是晚上十一点了，我刚准备早点睡觉睡觉😭 具体的解决过程会专门出一篇blog，希望你用不到。</p>
+<p><strong>没有早8️⃣</strong> Unimelb Semester 2的timetable开放了，火速就把课表排出来了。嘿嘿，没有早8，下午5点一定放学😁 翻阅Handbook可知，绝大部分我想学的课都有先修课程，曾企图跳过简单到爆炸的Calculus 1，未遂，又因为Mid Year Intake的问题选不到Accelerated Mathematics。那就……老老实实把基础课全学了吧，这样下学期开始就可以随心所欲了。选Medical Chemistry的好处是：有一节bio一节chem两节实验课，一节三小时，坏处是，额我比认识的同学一周多5节课。</p>
+<p><strong>材料性能</strong> 这周拉拔试验的结论就是：之前加工的质量就是废的。具体体现在：浅得多的下钻深度和较小的强度损失。</p>
+<h1 id="什么值得买"><a href="#什么值得买" class="headerlink" title="什么值得买"></a>什么值得买</h1><p><strong>Logitech MX Keys S</strong></p>
+<p>自己买的第二把键盘～ 上一把还是初二的Surface Keyboard。感触就是：钱到位了就是不一样。红外感应的键盘背光可以自动开关，并且根据环境自动调节亮度；可以连接三台设备，USB bolt接收器和蓝牙任选；不错的手感，微微凹陷的键帽意外的好用。最关键的是，闲鱼二手几乎全新，在保还有8个月。</p>
+<p><strong>Logitech M630</strong></p>
+<p>一样闲鱼二手几乎全新，白色的侧边橡胶材质貌似稍微有点容易脏。只能连一个设备稍微有点失望，早知道买M730了，但是手感还是可以的。</p>
+<h1 id="看-听-玩了什么"><a href="#看-听-玩了什么" class="headerlink" title="看&#x2F;听&#x2F;玩了什么"></a>看&#x2F;听&#x2F;玩了什么</h1><p><strong>航母简史</strong> 科学史评话的博客节目。听了很多年啦，小学三年级就开始听，几乎所有的节目都听过，评书风格的讲述，内容扎实的文稿，一如既往的高质量。对科学史感兴趣的强推！</p>
+
+        </div>
+      </div>
+      <div class="post-placeholder post-toc-container">
+        <!-- toc -->
+        
+          <!-- tocbot -->
+<nav class="post-toc toc"></nav>
+
+        
+      </div>
+   </div>
+
+    <!-- 评论 -->
+    
+  </div>
+</article>
+<!-- tocbot begin -->
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.post-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    });
+
+</script>
+<!-- tocbot end -->
+
+    </div>
+  </div>
+
+  <!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+  
+    <div class="footer-outer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
+
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-ul">
+                
+                <li class="footer-li">
+                    <a href="https://github.com/Tommy-Zhang3759" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="tommyzhang4707@outlook.com" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+  
+</div>
+
+
+
+
+<script src="/js/white.js"></script>
+
+<script>
+    hljs.highlightAll();
+</script>
+
+
+</body>
+</html>
